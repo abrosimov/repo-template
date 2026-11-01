@@ -1,0 +1,22 @@
+# Local tool state
+.hermetic/
+
+# Claude Code: personal instructions and settings, worktrees, local agent memory
+CLAUDE.local.md
+.claude/settings.local.json
+.claude/worktrees/
+.claude/agent-memory-local/
+.claude/scheduled_tasks.json
+.claude/scheduled_tasks.lock
+.claude/.cc-writes/
+
+# Codex, Antigravity: local instruction override
+AGENTS.override.md
+
+# Secrets loaded automatically by CLIs (Gemini CLI reads both)
+.env
+.gemini/.env
+
+# OS and IDE
+.DS_Store
+.idea/
