@@ -2,5 +2,5 @@
   "$schema": "https://docs.renovatebot.com/renovate-schema.json",
   // The shared policy, pinned to a tag; Renovate raises a pull request to
   // move the tag. This repository's own rules go below.
-  "extends": ["github>abrosimov/renovate-config#v3.3.0"],
+  "extends": ["github>abrosimov/renovate-config#v3.4.0"],
 }
