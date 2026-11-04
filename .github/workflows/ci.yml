@@ -18,7 +18,7 @@ concurrency:
 jobs:
   actionlint:
     name: actionlint
-    runs-on: ubuntu-latest
+    runs-on: ubuntu-26.04
     steps:
       - name: Checkout
         uses: actions/checkout@3d3c42e5aac5ba805825da76410c181273ba90b1 # v7
@@ -37,7 +37,7 @@ jobs:
     name: required
     if: always()
     needs: [actionlint]
-    runs-on: ubuntu-latest
+    runs-on: ubuntu-26.04
     steps:
       - name: All jobs passed
         run: test "${{ contains(needs.*.result, 'failure') || contains(needs.*.result, 'cancelled') }}" = false
